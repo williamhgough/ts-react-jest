@@ -1,0 +1,48 @@
+{
+    "name": "ts-react-jest",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "build": "webpack",
+        "test": "jest"
+    },
+    "devDependencies": {
+        "@types/enzyme": "^3.1.8",
+        "@types/enzyme-adapter-react-16": "^1.0.1",
+        "@types/jest": "^22.1.2",
+        "@types/react": "^16.0.36",
+        "@types/react-dom": "^16.0.3",
+        "awesome-typescript-loader": "^3.4.1",
+        "enzyme": "^3.3.0",
+        "enzyme-adapter-react-16": "^1.1.1",
+        "jest": "^22.2.2",
+        "react-test-renderer": "^16.2.0",
+        "source-map-loader": "^0.2.3",
+        "ts-jest": "^22.0.3",
+        "tslint": "^5.9.1",
+        "tslint-react": "^3.4.0",
+        "typescript": "^2.7.1",
+        "webpack": "^3.11.0"
+    },
+    "dependencies": {
+        "@types/enzyme": "^3.1.8",
+        "@types/enzyme-adapter-react-16": "^1.0.1",
+        "@types/jest": "^22.1.2",
+        "@types/react": "^16.0.36",
+        "@types/react-dom": "^16.0.3",
+        "enzyme": "^3.3.0",
+        "enzyme-adapter-react-16": "^1.1.1",
+        "jest": "^22.2.2",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0"
+    },
+    "jest": {
+        "setupTestFrameworkScriptFile": "<rootDir>/src/__test__/config.ts",
+        "transform": {
+            ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+        },
+        "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+        "moduleFileExtensions": ["ts", "tsx", "js"]
+    }
+}
